@@ -88,6 +88,6 @@ Tests cover protocol decoding, pass-through, custom keys, lifecycle cleanup, nat
 
 `dist/` is committed for direct Git installation. Run `npm run build` and commit generated changes alongside source changes. CI checks tests, generated-file consistency and package contents on Node 22 and 24.
 
-Source: `src/terminal.ts` (plugin behavior), `src/shortcuts.ts` (shared binding/protocol mapping), `src/tui.ts` (TUI entry), `src/index.ts` (server entry).
+Source: `src/terminal.ts` (plugin behavior), `src/shortcuts.ts` (shared binding/protocol mapping), `src/tui.ts` (TUI entry), `src/index.ts` (server entry). The root-level `index.ts`/`tui.ts` re-export the built files so directory-path loading resolves.
 
 MIT licensed. Issues and small, focused contributions are welcome.
