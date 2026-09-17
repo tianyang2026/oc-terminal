@@ -1,0 +1,20 @@
+{
+  "name": "opencode-terminal-shortcuts",
+  "version": "0.1.0",
+  "description": "VS Code-style shortcuts for OpenCode V2 persistent terminals, including while the terminal is focused.",
+  "type": "module",
+  "license": "MIT",
+  "author": "tianyang2026",
+  "repository": { "type": "git", "url": "https://github.com/tianyang2026/oc-terminal.git" },
+  "bugs": { "url": "https://github.com/tianyang2026/oc-terminal/issues" },
+  "homepage": "https://github.com/tianyang2026/oc-terminal#readme",
+  "keywords": ["opencode", "opencode-plugin", "tui", "terminal", "shortcuts"],
+  "exports": { ".": "./dist/index.js", "./tui": "./dist/tui.js" },
+  "files": ["dist", "README.md", "README.zh-CN.md", "LICENSE"],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test test/*.test.js",
+    "prepack": "npm run build"
+  },
+  "devDependencies": { "@opencode/plugin": "2.0.5", "typescript": "~5.9.3" }
+}
